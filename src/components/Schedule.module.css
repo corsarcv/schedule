@@ -107,11 +107,6 @@
   
   }
   
-  .secondary {
-    color: rgba(0, 0, 0, 0.4);
-  }
-  
-  
   .checkbox {
      display: none;
   }
@@ -198,6 +193,15 @@
   .today {
     color:yellow;
     background-color: #00B4FC;
+  }
+
+  .secondary {
+    color: rgba(0, 0, 0, 0.4);
+    background-color: white;
+  }
+
+  .today.secondary {
+    background-color: #0092cc76;
   }
   
   .now {

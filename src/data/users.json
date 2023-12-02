@@ -4,7 +4,7 @@
         "name": "Leo Derevianskyi",
         "sex": "M",
         "class": "604",
-        "day_one": "2023-11-29T00:00:00.000-0500",
+        "dayOne": "2023-11-29T00:00:00.000-0500",
         "schedule": {
             "day1": [
                 {"subject":"Homeroom", "teacher": "Petersen", "class": 259},
@@ -81,7 +81,7 @@
         "name": "Jasmine Derevianska",
         "sex": "F",
         "class": "611",
-        "day_one": "2023-11-29T00:00:00.000-0500",
+        "dayOne": "2023-11-29T00:00:00.000-0500",
         "schedule": {
             "day1": [
                 {"subject":"Homeroom", "teacher": "Yasin/Pignataro", "class": 312},
