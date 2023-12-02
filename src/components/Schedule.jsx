@@ -41,7 +41,6 @@ export class Schedule extends Component{
         const schoolDayIndex = this.getSchoolDay(dt, currentUser);
         const keyName = 'day' + schoolDayIndex;        
         const todaySchedule = currentUser.schedule[keyName];
-        console.log(todaySchedule[index], index, dt);
         return todaySchedule[index];
     }
 
@@ -64,11 +63,6 @@ export class Schedule extends Component{
             default:
                 return null;
         }
-    }
-    state = {
-        startDate: this.getMonday(),
-        endDate: this.getNextMonday(),
-        periodsCount: 9 // Can be dynamic
     }
      
     findSelectedUser(){
@@ -104,18 +98,33 @@ export class Schedule extends Component{
     }
     
     dateDiffInDays = (a, b) => {
-        const _MS_PER_DAY = 1000 * 60 * 60 * 24;
-        console.log("==>", a, b);
-        // Discard the time and time-zone information.
-        const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
-        const utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
-        console.log("-->", utc1, utc2);
-        console.log("<--", Math.floor((utc2 - utc1) / _MS_PER_DAY));
-        return Math.floor((utc2 - utc1) / _MS_PER_DAY);
+        a.setHours(0,0,0,0); 
+        b.setHours(0,0,0,0); 
+        console.log("Input:", a, b, a>b, a<b, a==b, a===b)
+        
+        if (a.toString() == b.toString()){
+            return 0;
+        }
+        const isPast = a>b;
+
+        const increment = isPast ? -1 : 1;
+        let count = 0;
+        let currentDate = new Date(a);
+        do {
+            currentDate.setDate(currentDate.getDate() + increment);
+            if (![6, 0].includes(currentDate.getDay()))
+                count += increment;
+        } while ((isPast && currentDate > b) || (!isPast && currentDate < b) || (count > 10))
+        return count;
       }
 
+    state = {
+        startDate: this.getMonday(),
+        endDate: this.getNextMonday(),
+        periodsCount: 9 // Can be dynamic
+    }
+
     render () {
-        // console.log('->', this.getDatesList());
         const selectedUser = this.findSelectedUser();
         return <div className={css.calendar}>
         <header>

@@ -17,7 +17,7 @@
   
   header {
     background: #fff;
-    padding: 1rem;
+    padding: 0.5rem;
     color: rgba(0, 0, 0, 0.7);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     position: relative;
@@ -254,7 +254,7 @@
     text-align: center;
     border-radius: 5px;
     padding: 1px;
-    box-shadow:  2px 2px 4px #888888;
+    box-shadow:  2px 2px 4px #555555;
   }
   .lunch{
     background-color: mediumvioletred;
