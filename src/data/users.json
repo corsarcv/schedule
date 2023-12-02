@@ -1,0 +1,157 @@
+[
+    {
+        "id": "leo.derevianskyi",
+        "name": "Leo Derevianskyi",
+        "sex": "M",
+        "class": "604",
+        "day_one": "2023-11-29T05:00:00.000Z",
+        "schedule": {
+            "day1": [
+                {"subject":"Homeroom", "teacher": "Petersen", "class": 259},
+                {"subject":"Science", "teacher": "Petersen", "class": 259},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
+                {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
+                {"subject":"Social Studies", "teacher": "Martello", "class": 321},
+                {"subject":"STEM", "teacher": "Lober", "class": null},
+                {"subject":"ELA", "teacher": "O'Brien", "class": 342},
+                {"subject":"ELA", "teacher": "O'Brien", "class": 342}
+                ],
+            "day2": [
+                {"subject":"Homeroom", "teacher": "Petersen", "class": 259},
+                {"subject":"Assembly", "teacher": "Sarris", "class": "Auditorium"},
+                {"subject":"Social Studies", "teacher": "Martello", "class": 321},
+                {"subject":"ELA", "teacher": "O'Brien", "class": 342},
+                {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
+                {"subject":"ELA", "teacher": "O'Brien", "class": 342},
+                {"subject": "Phys Ed", "teacher": "Porzio", "class": "Gym"},
+                {"subject":"Science", "teacher": "Petersen", "class": 259},
+                {"subject":"STEM", "teacher": "Lober", "class": null}
+
+                
+                ],        
+            "day3": [
+                {"subject":"Homeroom", "teacher": "Petersen", "class": 259},
+                {"subject":"Social Studies", "teacher": "Martello", "class": 321},
+                {"subject":"Science", "teacher": "Petersen", "class": 259},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
+                {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
+                {"subject":"Health", "teacher": "Angelastro", "class": "Auditorium"},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
+                {"subject":"ELA", "teacher": "O'Brien", "class": 342},
+                {"subject":"ELA", "teacher": "O'Brien", "class": 342}
+                ],
+            "day4": [
+                {"subject":"Homeroom", "teacher": "Petersen", "class": 259},
+                {"subject":"PhysEd", "teacher": "Porzio", "class": "Gym"},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
+                {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
+                {"subject":"Ed Tech", "teacher": "Ahmed S.", "class": 219},
+                {"subject":"Social Studies", "teacher": "Martello", "class": 321},
+                {"subject":"ELA", "teacher": "O'Brien", "class": 342},
+                {"subject":"ELA", "teacher": "O'Brien", "class": 342}
+                ],
+            "day5": [
+                {"subject":"Homeroom", "teacher": "Petersen", "class": 259},
+                {"subject":"Science", "teacher": "Petersen", "class": 259},
+                {"subject":"Science", "teacher": "Petersen", "class": 259},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
+                {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
+                {"subject":"Ed Tech", "teacher": "Ahmed S.", "class": 219},
+                {"subject":"ELA", "teacher": "O'Brien", "class": 342},
+                {"subject":"ELA", "teacher": "O'Brien", "class": 342}
+                ],
+            "day6": [
+                {"subject":"Homeroom", "teacher": "Petersen", "class": 259},
+                {"subject":"Science", "teacher": "Petersen", "class": 259},
+                {"subject":"Social Studies", "teacher": "Martello", "class": 321},
+                {"subject":"Social Studies", "teacher": "Martello", "class": 321},
+                {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
+                {"subject":"Phys Ed", "teacher": "Porzio", "class": "Gym"},
+                {"subject":"STEM", "teacher": "Lober", "class": null},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 321}
+                ]   
+        }
+    },
+    {
+        "id": "jasmine.derevianska",
+        "name": "Jasmine Derevianska",
+        "sex": "F",
+        "class": "611",
+        "day_one": "2023-11-27",
+        "schedule": {
+            "day1": [
+                {"subject":"Homeroom", "teacher": "Yasin/Pignataro", "class": 312},
+                {"subject":"Math", "teacher": "Borsky/Golden", "class": 322},
+                {"subject":"Math", "teacher": "Borsky/Golden", "class": 322},
+                {"subject":"ELA", "teacher": "Forgione/Waltman", "class": 320},
+                {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
+                {"subject":"ELA", "teacher": "Forgione/Waltman", "class": 320},
+                {"subject":"Social Studies", "teacher": "Roth/Freydin", "class": 347},
+                {"subject":"Science", "teacher": "Yasin/Pignataro", "class": 312},
+                {"subject":"Health", "teacher": "Angelastro", "class": "Auditorium"}
+            ],
+            "day2": [
+                {"subject":"Homeroom", "teacher": "Yasin", "class": 312},
+                {"subject":"Assembly", "teacher": "Saris", "class": "Auditorium"},
+                {"subject":"Social Studies", "teacher": "Roth/Quinones-Seda", "class": 347},
+                {"subject":"Science", "teacher": "Yasin/Pignataro", "class": 312},
+                {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
+                {"subject":"ELA", "teacher": "Forgione/Waltman", "class": 320},
+                {"subject":"ELA", "teacher": "Forgione/Waltman", "class": 320},
+                {"subject":"Math", "teacher": "Borsky/Golden", "class": 322},
+                {"subject":"Math", "teacher": "Borsky/Golden", "class": 322}
+
+            ],
+            "day3": [
+                {"subject":"Homeroom", "teacher": "Yasin", "class": 312},
+                {"subject":"Math", "teacher": "Borsky/Golden", "class": 322},
+                {"subject":"Math", "teacher": "Borsky/Golden", "class": 322},
+                {"subject":"Talent", "teacher": "Zaffery/Schwarz", "class": "113/119"},
+                {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
+                {"subject":"Science", "teacher": "Yasin/Pignataro", "class": 312},
+                {"subject":"Phys Ed", "teacher": "Kagen", "class": "Gym A"},
+                {"subject":"ELA", "teacher": "Forgione/Waltman", "class": 320},
+                {"subject":"ELA", "teacher": "Forgione/Waltman", "class": 320}
+            ],
+            "day4": [
+                {"subject":"Homeroom", "teacher": "Yasin", "class": 312},
+                {"subject":"Talent", "teacher": "Zaffery/Schwarz", "class": "113/119"},
+                {"subject":"Social Studies", "teacher": "Roth/Quinones-Seda", "class": 347},
+                {"subject":"Math", "teacher": "Borsky/Golden", "class": 322},
+                {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
+                {"subject":"Math", "teacher": "Borsky/Golden", "class": 322},
+                {"subject":"Ed Tech", "teacher": "Ahmed S.", "class": 219},
+                {"subject":"ELA", "teacher": "Forgione/Waltman", "class": 320},
+                {"subject":"ELA", "teacher": "Forgione/Waltman", "class": 320}
+            ],
+            "day5": [
+                {"subject":"Homeroom", "teacher": "Yasin", "class": 312},
+                {"subject":"Social Studies", "teacher": "Roth/Quinones-Seda", "class": 347},
+                {"subject":"Social Studies", "teacher": "Roth/Quinones-Seda", "class": 347},
+                {"subject":"Math", "teacher": "Borsky/Golden", "class": 322},
+                {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
+                {"subject":"Math", "teacher": "Borsky/Golden", "class": 322},
+                {"subject":"Talent", "teacher": "Zaffery/Schwarz", "class": "113/119"},
+                {"subject":"Science", "teacher": "Yasin/Pignataro", "class": 312},
+                {"subject":"Phys Ed", "teacher": "Kagen", "class": "Gym A"}
+            ],
+            "day6": [
+                {"subject":"Homeroom", "teacher": "Yasin", "class": 312},
+                {"subject":"Phys Ed", "teacher": "Kagen", "class": "Gym A"},
+                {"subject":"Ed Tech", "teacher": "Ahmed S.", "class": 219},
+                {"subject":"ELA", "teacher": "Forgione/Waltman", "class": 320},
+                {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
+                {"subject":"ELA", "teacher": "Forgione/Waltman", "class": 320},
+                {"subject":"Farrone", "teacher": "Pignataro", "class": 312},
+                {"subject":"Science", "teacher": "Yasin/Pignataro", "class": 312},
+                {"subject":"Social Studies", "teacher": "Roth/Quinones-Seda", "class": 347}
+            ]
+
+
+        }
+    }
+]
