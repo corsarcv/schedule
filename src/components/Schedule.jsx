@@ -17,7 +17,7 @@ export class Schedule extends Component{
             return null;
         var foundUser = null;
         this.props.users.forEach(user => {
-            if (user.id == this.props.selectedUser){
+            if (user.id === this.props.selectedUser){
                 foundUser = user;
                 return
             }
@@ -50,7 +50,7 @@ export class Schedule extends Component{
             <th className={css.headcol}></th>
             {this.dateUtils.getDatesList(this.state.startDate, this.state.endDate).map(dt =>(
                 <th key={this.dateUtils.getFormattedDate(dt)} className={
-                    [this.dateUtils.getFormattedDate(dt) == this.dateUtils.getFormattedDate(new Date())? css.today : "",
+                    [this.dateUtils.getFormattedDate(dt) === this.dateUtils.getFormattedDate(new Date())? css.today : "",
                     (this.dateUtils.isWeekendOrHoliday(dt)) ? css.secondary : ""].join(" ")}>
                     {this.dateUtils.getFormattedDate(dt)}
                 </th>
@@ -60,7 +60,7 @@ export class Schedule extends Component{
             <th className={css.headcol}></th>
             {this.dateUtils.getDatesList(this.state.startDate, this.state.endDate).map(dt =>(
                 <th key={this.dateUtils.getFormattedDate(dt) + "_day"} className={
-                    [this.dateUtils.getFormattedDate(dt) == this.dateUtils.getFormattedDate(new Date())? css.today : "",
+                    [this.dateUtils.getFormattedDate(dt) === this.dateUtils.getFormattedDate(new Date())? css.today : "",
                     (this.dateUtils.isWeekendOrHoliday(dt)) ? css.secondary : ""].join(" ")}>
                     {this.dateUtils.getFormattedSchoolDate(dt, selectedUser.dayOne)}
                 </th>

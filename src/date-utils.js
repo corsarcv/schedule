@@ -33,7 +33,7 @@ export class DateUtils {
         return schoolDayIndex? "Day " + schoolDayIndex: null;
     }
     getPeriodForDate = (dt, index, currentUser) => {
-        if (dt.getDay() == 6 || dt.getDay() == 0 || this.isHoliday(dt))
+        if (this.isWeekendOrHoliday(dt))
             return null;
         const schoolDayIndex = this.getSchoolDay(dt, currentUser.dayOne);
         const keyName = 'day' + schoolDayIndex;        
