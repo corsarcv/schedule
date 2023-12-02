@@ -100,7 +100,6 @@ export class Schedule extends Component{
     dateDiffInDays = (a, b) => {
         a.setHours(0,0,0,0); 
         b.setHours(0,0,0,0); 
-        console.log("Input:", a, b, a>b, a<b, a==b, a===b)
         
         if (a.toString() == b.toString()){
             return 0;
