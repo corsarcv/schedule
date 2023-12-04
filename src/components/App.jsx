@@ -4,6 +4,7 @@ import { Schedule } from "./Schedule";
 import { Section } from "./Section";
 import users from "../data/users.json"
 import holidays from "../data/holidays.json"
+import bell from "../data/bell.json"
 
 export class App extends Component{
   
@@ -19,8 +20,12 @@ export class App extends Component{
         </Section>
         <Section>
           {this.state.selectedUser 
-            ? (<Schedule selectedUser={this.state.selectedUser} users={users} holidays={holidays}/>) 
-            : (<div><b>Select a user to begin</b></div>)
+            ? (<Schedule 
+                selectedUser={this.state.selectedUser} 
+                users={users} 
+                holidays={holidays}
+                bell={bell}/>) 
+            : (<div style={{textAlign: "center"}}><b>Select a user to begin</b></div>)
           }    
         </Section>
       </div>

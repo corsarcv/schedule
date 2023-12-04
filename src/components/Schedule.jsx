@@ -40,7 +40,6 @@ export class Schedule extends Component{
     }
     render () {
         const selectedUser = this.findSelectedUser();
-        console.log(this.state.startDate,  this.dateUtils.getCurrentMonday());
         return <div className={css.calendar}>
         <header>
             <div className={[css.secondary, css.secondary_header].join(" ")} >Class {selectedUser.class}</div>
@@ -92,7 +91,11 @@ export class Schedule extends Component{
           {Array.from(Array(this.state.periodsCount), (_, i)=>{
             return (
                 <tr key={`row_${i}`}>
-                    <td className={css.headcol}>{i>0 ? i: "HR" }</td>
+                    <td className={css.headcol}>
+                        {i>0 
+                            ? (<div><div>{i}</div><div>{this.props.bell[i]}</div></div>)
+                            : (<div><div>HR</div><div>{this.props.bell["HR"]}</div></div>) }
+                    </td>
                     {this.dateUtils.getDatesList(this.state.startDate, this.state.endDate).map(dt =>(
                         <td key={`${i}${dt.toString()}`} className={[
                                 this.dateUtils.isWeekendOrHoliday(dt) ? css.past: null,
