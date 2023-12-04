@@ -50,7 +50,7 @@ export class Schedule extends Component{
                     this.state.startDate.toDateString() === this.dateUtils.getCurrentMonday().toDateString() ? css.disabled : ""
                 ].join(" ")} 
                 onClick={this.onPrev}>‹</div>
-              <h1><strong>
+              <h1 class={css.daterange}><strong>
                 {this.dateUtils.getFormattedPeriod(this.state.startDate, this.state.endDate)}
               </strong></h1>
               <div className={[css.icon, css.secondary, css.chevron_left].join(" ")} onClick={this.onNext}>›</div>

@@ -237,8 +237,8 @@
   
     overflow-x: hidden;
     overflow-y: scroll;
-      max-width: 1280px;
-    height: 640px;
+    max-width: 1280px;
+    height: 720px;
     border-radius: 8px;
   }
 
@@ -305,4 +305,7 @@
 
 .disabled{
   visibility: hidden;
+}
+.daterange{
+  width: 160px;
 }
