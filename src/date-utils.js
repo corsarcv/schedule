@@ -10,10 +10,18 @@ export class DateUtils {
           today.setHours(-24 * (day - 1));
         return today;
       }
+
     getNextMonday = (d) => {
         var today = d ? new Date(d) : new Date();
         var day = today.getDay() || 7; // Get current day number, converting Sun. to 7
         today.setHours(24 * (8 - day));
+        return today;
+    } 
+
+    getPrevMonday = (d) => {
+        var today = d ? new Date(d) : new Date();
+        var day = today.getDay() || 7; // Get current day number, converting Sun. to 7
+        today.setHours(-24 * (8 - day));
         return today;
     } 
 
@@ -77,10 +85,12 @@ export class DateUtils {
         const increment = isPast ? -1 : 1;
         let count = 0;
         let currentDate = new Date(a);
-        while ((isPast && currentDate > b) || (!isPast && currentDate < b) || (count > 10)) {
+        while ((isPast && currentDate > b) || (!isPast && currentDate < b)) {
             currentDate.setDate(currentDate.getDate() + increment);
             if (!this.isWeekendOrHoliday(currentDate))
                 count += increment;
+            if (count > 100)
+                throw new Error(currentDate);
         } 
         return count;
       } 

@@ -303,3 +303,7 @@
 .health{
   background-color: rgb(150, 1, 225);
 }
+
+.disabled{
+  visibility: hidden;
+}

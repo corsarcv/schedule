@@ -25,25 +25,42 @@ export class Schedule extends Component{
         return foundUser;
     }
 
+    onPrev = () => {
+        this.setState({
+            endDate: new Date(this.state.startDate),
+            startDate: this.dateUtils.getPrevMonday(this.state.startDate)
+        });
+    }
+
+    onNext = () => {
+        this.setState({
+            startDate: new Date(this.state.endDate), 
+            endDate: this.dateUtils.getNextMonday(this.state.endDate)
+        });
+    }
     render () {
         const selectedUser = this.findSelectedUser();
-
+        console.log(this.state.startDate,  this.dateUtils.getCurrentMonday());
         return <div className={css.calendar}>
         <header>
             <div className={[css.secondary, css.secondary_header].join(" ")} >Class {selectedUser.class}</div>
             <div className={css.calendar_title}>
-              <div className={[css.icon, css.secondary, css.chevron_left].join(" ")}>‹</div>
+              <div className={
+                [
+                    css.icon, css.secondary, css.chevron_left, 
+                    this.state.startDate.toDateString() === this.dateUtils.getCurrentMonday().toDateString() ? css.disabled : ""
+                ].join(" ")} 
+                onClick={this.onPrev}>‹</div>
               <h1><strong>
                 {this.dateUtils.getFormattedPeriod(this.state.startDate, this.state.endDate)}
               </strong></h1>
-              <div className={[css.icon, css.secondary, css.chevron_left].join(" ")}>›</div>
+              <div className={[css.icon, css.secondary, css.chevron_left].join(" ")} onClick={this.onNext}>›</div>
             </div> 
             <div className={css.secondary_header}></div>
         </header>
         
         <div className={css.outer}>
       
-        
         <table>
         <thead>
           <tr>
@@ -92,7 +109,6 @@ export class Schedule extends Component{
       </div>
       </div>
       </div>
-      
     }
 }
 
