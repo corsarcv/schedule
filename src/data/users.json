@@ -34,18 +34,18 @@
                 {"subject":"Homeroom", "teacher": "Petersen", "class": 259},
                 {"subject":"Social Studies", "teacher": "Martello", "class": 321},
                 {"subject":"Science", "teacher": "Petersen", "class": 259},
-                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 357},
                 {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
                 {"subject":"Health", "teacher": "Angelastro", "class": "Auditorium"},
-                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 357},
                 {"subject":"ELA", "teacher": "O'Brien", "class": 342},
                 {"subject":"ELA", "teacher": "O'Brien", "class": 342}
                 ],
             "day4": [
                 {"subject":"Homeroom", "teacher": "Petersen", "class": 259},
                 {"subject":"PhysEd", "teacher": "Porzio", "class": "Gym"},
-                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
-                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 220},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 220},
                 {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
                 {"subject":"Ed Tech", "teacher": "Ahmed S.", "class": 219},
                 {"subject":"Social Studies", "teacher": "Martello", "class": 321},
@@ -56,9 +56,9 @@
                 {"subject":"Homeroom", "teacher": "Petersen", "class": 259},
                 {"subject":"Science", "teacher": "Petersen", "class": 259},
                 {"subject":"Science", "teacher": "Petersen", "class": 259},
-                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 357},
                 {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
-                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 357},
                 {"subject":"Ed Tech", "teacher": "Ahmed S.", "class": 219},
                 {"subject":"ELA", "teacher": "O'Brien", "class": 342},
                 {"subject":"ELA", "teacher": "O'Brien", "class": 342}
@@ -71,8 +71,8 @@
                 {"subject":"Lunch", "teacher": "Sarris", "class": "Cafeteria"},
                 {"subject":"Phys Ed", "teacher": "Porzio", "class": "Gym"},
                 {"subject":"STEM", "teacher": "Lober", "class": null},
-                {"subject":"Math", "teacher": "Murdukhaev", "class": 321},
-                {"subject":"Math", "teacher": "Murdukhaev", "class": 321}
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 353},
+                {"subject":"Math", "teacher": "Murdukhaev", "class": 353}
                 ]   
         }
     },
